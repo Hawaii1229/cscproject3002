@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>home</class>
+ <widget class="QMainWindow" name="home">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>400</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>700</width>
+    <height>300</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Store Management</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="mainLayout">
+    <!-- 图片展示 -->
+    <layout class="QHBoxLayout" name="photoLayout">
+     <item>
+      <widget class="QGraphicsView" name="photo">
+       <property name="minimumSize">
+        <size>
+         <width>180</width>
+         <height>180</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>180</width>
+         <height>180</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string>
+         border: 2px solid #ddd;
+         border-radius: 10px;
+         background-color: #f9f9f9;
+        </string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <layout class="QVBoxLayout" name="infoLayout">
+       <!-- 店铺名称 -->
+       <item>
+        <layout class="QHBoxLayout" name="storenameLayout">
+         <item>
+          <widget class="QLabel" name="label_storename">
+           <property name="text">
+            <string>Store Name:</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QTextEdit" name="storename">
+           <property name="maximumHeight">
+            <number>30</number>
+           </property>
+           <property name="styleSheet">
+            <string>
+             padding: 6px;
+             border: 1px solid #ccc;
+             border-radius: 5px;
+             background-color: #fff;
+            </string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <!-- 店铺地址 -->
+       <item>
+        <layout class="QHBoxLayout" name="storeaddressLayout">
+         <item>
+          <widget class="QLabel" name="label_storeaddress">
+           <property name="text">
+            <string>Store Address:</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QTextEdit" name="storeaddress">
+           <property name="maximumHeight">
+            <number>30</number>
+           </property>
+           <property name="styleSheet">
+            <string>
+             padding: 6px;
+             border: 1px solid #ccc;
+             border-radius: 5px;
+             background-color: #fff;
+            </string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <!-- 图片路径 -->
+       <item>
+        <layout class="QHBoxLayout" name="storephotoLayout">
+         <item>
+          <widget class="QLabel" name="label_storephoto">
+           <property name="text">
+            <string>Photo Path:</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QTextEdit" name="storephoto">
+           <property name="maximumHeight">
+            <number>30</number>
+           </property>
+           <property name="styleSheet">
+            <string>
+             padding: 6px;
+             border: 1px solid #ccc;
+             border-radius: 5px;
+             background-color: #fff;
+            </string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </item>
+    </layout>
+
+    <!-- 按钮 -->
+    <layout class="QHBoxLayout" name="buttonLayout">
+     <item>
+      <spacer name="horizontalSpacer">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QPushButton" name="change">
+       <property name="text">
+        <string>Save Changes</string>
+       </property>
+       <property name="styleSheet">
+        <string>
+         background-color: #4CAF50;
+         color: white;
+         border-radius: 5px;
+         padding: 10px 20px;
+        </string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="refresh">
+       <property name="text">
+        <string>Refresh</string>
+       </property>
+       <property name="styleSheet">
+        <string>
+         background-color: #2196F3;
+         color: white;
+         border-radius: 5px;
+         padding: 10px 20px;
+        </string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </layout>
+  </widget>
+
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>26</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

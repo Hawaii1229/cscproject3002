@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>order_tob</class>
+ <widget class="QMainWindow" name="order_tob">
+  <property name="windowTitle">
+   <string>订单管理</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <!-- 标题 -->
+    <item>
+     <widget class="QLabel" name="labelTitle">
+      <property name="text">
+       <string>店铺订单管理</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+      <property name="styleSheet">
+       <string>
+        QLabel {
+            font-size: 18px;
+            font-weight: bold;
+            color: #333;
+        }
+       </string>
+      </property>
+     </widget>
+    </item>
+    <!-- 滚动区域 -->
+    <item>
+     <widget class="QScrollArea" name="m_scrollArea">
+      <property name="widgetResizable">
+       <bool>true</bool>
+      </property>
+      <widget class="QWidget" name="scrollAreaWidgetContents">
+       <layout class="QVBoxLayout" name="scrollAreaLayout">
+        <!-- 动态内容区域 -->
+       </layout>
+      </widget>
+      <property name="styleSheet">
+       <string>
+        QScrollArea {
+            background-color: #f7f7f7;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+       </string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar"/>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

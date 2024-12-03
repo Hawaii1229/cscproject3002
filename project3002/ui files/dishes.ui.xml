@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>dishes</class>
+ <widget class="QWidget" name="dishes">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>420</width>
+    <height>160</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>420</width>
+    <height>160</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>420</width>
+    <height>160</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Dishes</string>
+  </property>
+  <property name="styleSheet">
+   <string>
+    QWidget {
+        background-color: #f9f9f9;
+        font-family: 'Microsoft YaHei UI';
+        font-size: 10pt;
+    }
+   </string>
+  </property>
+  <widget class="QGraphicsView" name="dishes_photo">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>15</y>
+     <width>130</width>
+     <height>130</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string>
+     QGraphicsView {
+         border: 2px solid #ccc;
+         border-radius: 8px;
+         background-color: #ffffff;
+         box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+     }
+    </string>
+   </property>
+  </widget>
+  <widget class="QTextBrowser" name="name">
+   <property name="geometry">
+    <rect>
+     <x>150</x>
+     <y>10</y>
+     <width>241</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string>
+     QTextBrowser {
+         background-color: transparent;
+         border: none;
+         color: #333333;
+     }
+    </string>
+   </property>
+  </widget>
+  <widget class="QTextBrowser" name="price">
+   <property name="geometry">
+    <rect>
+     <x>150</x>
+     <y>50</y>
+     <width>121</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+     <italic>true</italic>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string>
+     QTextBrowser {
+         background-color: transparent;
+         border: none;
+         color: #666666;
+     }
+    </string>
+   </property>
+  </widget>
+  <widget class="QTextBrowser" name="introduction">
+   <property name="geometry">
+    <rect>
+     <x>150</x>
+     <y>90</y>
+     <width>241</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>9</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string>
+     QTextBrowser {
+         background-color: #f2f2f2;
+         border: 1px solid #ccc;
+         border-radius: 4px;
+         padding: 5px;
+         color: #333333;
+     }
+    </string>
+   </property>
+  </widget>
+  <widget class="QSpinBox" name="quantity">
+   <property name="geometry">
+    <rect>
+     <x>290</x>
+     <y>50</y>
+     <width>101</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string>
+     QSpinBox {
+         border: 1px solid #ccc;
+         border-radius: 4px;
+         padding: 5px;
+         background-color: #ffffff;
+         color: #333333;
+     }
+     QSpinBox::up-button {
+         width: 20px;
+         height: 10px;
+     }
+     QSpinBox::down-button {
+         width: 20px;
+         height: 10px;
+     }
+    </string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
